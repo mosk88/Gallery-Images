@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
 }
@@ -60,4 +60,41 @@ body {
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
+}
+#carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: none;
+}
+
+.carousel-image.active {
+  display: block;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
 }
